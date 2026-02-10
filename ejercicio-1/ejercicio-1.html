@@ -4,13 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 1</title>
+    <style>
+        div#change-color {
+            position: absolute;
+            left: 600px;
+            top: 300px;
+        }
+
+        #btn-color {
+            font-size: 24px;
+            padding: 10px;
+            color: black;
+            background-color: white;
+            box-shadow: 0px 0px 5px black;
+            border-radius: 16px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Ejercicio 1 - Cambiador Color de Fondo</h1>
-    <p>Crea una página web con un botón que diga "Cambiar color". Cada vez que el usuario haga 
-    clic en el botón, el color de fondo de la página debe cambiar a un color aleatorio. </p>
-
+    <div id="container">
+        <h1>Ejercicio 1 - Cambiador Color de Fondo</h1>
+        <p>Crea una página web con un botón que diga "Cambiar color". Cada vez que el usuario haga 
+        clic en el botón, el color de fondo de la página debe cambiar a un color aleatorio. </p>
     
-    <script src="ejercicio-1.js"></script>
+        <div id="change-color">
+            <button id="btn-color">Cambiar Color</button>
+        </div>
+    
+        
+        <script src="ejercicio-1.js"></script>
+    </div>
 </body>
 </html>

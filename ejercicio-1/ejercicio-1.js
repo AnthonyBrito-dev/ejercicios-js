@@ -1,0 +1,7 @@
+let selectButton = document.getElementById("btn-color")
+selectButton.addEventListener("click", ()=> {
+    let container = document.body.style.backgroundColor = `rgb(
+    ${Math.floor(Math.random() * 256)},
+    ${Math.floor(Math.random() * 256)},
+    ${Math.floor(Math.random() * 256)})`
+})
