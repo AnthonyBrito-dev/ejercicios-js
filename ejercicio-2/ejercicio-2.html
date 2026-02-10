@@ -4,6 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 2</title>
+    <style>
+        div#buttons {
+            display: flex;
+            gap: 10px;
+            justify-self: center;
+        }
+
+        #contar, #reset {
+            font-size: 18px;
+            padding: 5px;
+            color: black;
+            background-color: white;
+            box-shadow: 0px 0px 5px black;
+            border-radius: 16px;
+        }
+
+        div#contador {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            border: 3px solid black;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
     <a href="../index.html">Home</a>
@@ -11,6 +36,14 @@
     <p>Crea una página con un botón que diga "Contar clics" y un texto inicial que muestre 
     "Clics: 0". Cada vez que se haga clic en el botón, el texto debe actualizarse para mostrar 
     el número total de clics realizados. </p>
+    
+    <div id="buttons">
+        <button id="contar">Contar Clicks</button>
+        <button id="reset">Resetear</button>
+    </div>
+
+    <div id="contador">Clicks: 0</div>
+
 
     
     <script src="ejercicio-2.js"></script>
