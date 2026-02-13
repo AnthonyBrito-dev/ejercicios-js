@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 4</title>
+    <style>
+        div#agregar-texto {
+            margin-top: 25px;
+        }
+
+        div#content{
+            display: flex;
+            gap: 20px
+        }
+
+        div#content ul {
+            list-style: none;
+        }
+
+    </style>
 </head>
 <body>
     <a href="../index.html">Home</a>
@@ -13,8 +28,25 @@
     mostrar solo los elementos que contienen el texto escrito</p>
     <p>Ejemplo: Si la lista contiene ["Perro", "Gato", "Pez"] y el usuario escribe "Ga", solo 
     "Gato" debe quedar visible. </p>
+    <hr>
 
+    <div id="content">
+        <div id="agregar-texto">
+            <input type="search" id="buscar" >
+        </div>
     
+        <h2>Lista:</h2>
+        <ul id="predefinidos">
+            <li>HYUNDAI</li>
+            <li>HIT</li>
+            <li>BMW</li>
+            <li>AUDI</li>
+            <li>FERRARI</li>
+            <li>TOYOTA</li>
+        </ul>
+
+    </div>
+
     <script src="ejercicio-4.js"></script>
 </body>
 </html>
