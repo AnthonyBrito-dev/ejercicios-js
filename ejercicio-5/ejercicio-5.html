@@ -4,6 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 5</title>
+    <style>
+        div {
+            margin-top: 15px;
+        }
+
+        #numbers {
+            display: flex;
+            gap: 10px;
+        }
+
+        #buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
     <a href="../index.html">Home</a>
@@ -13,6 +32,23 @@
     <p>Al hacer clic en cualquiera de los botones, debe mostrarse el resultado de la operación en un 
     área de texto o debajo de los botones.</p>
     <p>Asegúrate de validar los datos para evitar errores (como división por cero o entradas vacías). </p>
+    <hr>
+
+    <div id="numbers">
+        <input type="number" name="number1" id="number1" placeholder="primer numero">
+        <input type="number" name="number2" id="number2" placeholder="segundo numero">
+    </div>
+
+    <div id="buttons">
+        <button id="sumar">+</button>
+        <button id="restar">-</button>
+        <button id="multiplicar">x</button>
+        <button id="dividir">/</button>
+    </div>
+
+    <div id="result">
+        <span id="resultado-op"></span>
+    </div>
 
     <script src="ejercicio-5.js"></script>
 </body>
