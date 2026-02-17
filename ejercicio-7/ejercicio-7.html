@@ -4,16 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 7</title>
+    <style>
+        #generador {
+            margin-top: 20px;
+        }
+
+        #size {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <a href="../index.html">Home</a>
-    <h1>Ejercicio 7 - Generador de Contraseñas Aleatorias</h1>
-    <p>Crea una página con un campo de entrada para especificar la longitud de una contraseña y 
-    un botón que diga “Generar contraseña”.</p>
-    <p>Al hacer clic en el botón, se debe mostrar una contraseña generada aleatoriamente usando 
-    letras, números y caracteres especiales.</p>
-    <p>Si la longitud es menor a 4 o el campo está vacío, muestra un mensaje de error indicando 
-    que la longitud debe ser mayor o igual a 4. </p>
+    <div>
+        <a href="../index.html">Home</a>
+        <h1>Ejercicio 7 - Generador de Contraseñas Aleatorias</h1>
+        <p>Crea una página con un campo de entrada para especificar la longitud de una contraseña y 
+        un botón que diga “Generar contraseña”.</p>
+        <p>Al hacer clic en el botón, se debe mostrar una contraseña generada aleatoriamente usando 
+        letras, números y caracteres especiales.</p>
+        <p>Si la longitud es menor a 4 o el campo está vacío, muestra un mensaje de error indicando 
+        que la longitud debe ser mayor o igual a 4. </p>
+    </div>
+    <hr>
+
+    <div id="generador">
+        <input type="number" name="size" id="size">
+        <button id="password">Generar Contraseña</button>
+        <p id="password-generated"></p>
+    </div>
 
     <script src="ejercicio-7.js"></script>
 </body>
