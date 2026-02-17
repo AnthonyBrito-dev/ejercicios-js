@@ -1,7 +1,7 @@
-//validamos el campo de texto para que sean mas de 4 caracteres
+//Selecionamos el campo de texto y el botno para generar contraseña. 
+//Creamos lista par añadir los caracteres que se vayan creando
 let campoTexto = document.getElementById("size")
 let btnPassword = document.getElementById("password")
-let divContainer = document.getElementById("generador")
 let listaCaracteres = []
 
 //creamos evento al boton
