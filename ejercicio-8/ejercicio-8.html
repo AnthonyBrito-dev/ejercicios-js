@@ -4,14 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 8</title>
+    <style>
+        #campo-texto {
+            margin: 20px 10px;
+        }
+        #texto {
+            padding: 10px;
+            width: 700px;
+            max-width: 700px;
+        }
+        #real-time {
+            margin: 0px 10px;
+            display: flex;
+            gap: 0px 100px;
+        }
+    </style>
 </head>
 <body>
-    <a href="../index.html">Home</a>
-    <h1>Ejercicio 8 - Contador de Palabras y Caracteres</h1>
-    <p>Crea una página con un campo de texto donde el usuario pueda escribir un párrafo. </p>
-    <p>Muestra en tiempo real el número de caracteres y palabras ingresados debajo del campo.</p>
-    <p>Palabras deben ser separadas por espacios, y los caracteres no deben incluir espacios ni 
-    saltos de línea.</p>
+    <div>
+        <a href="../index.html">Home</a>
+        <h1>Ejercicio 8 - Contador de Palabras y Caracteres</h1>
+        <p>Crea una página con un campo de texto donde el usuario pueda escribir un párrafo. </p>
+        <p>Muestra en tiempo real el número de caracteres y palabras ingresados debajo del campo.</p>
+        <p>Palabras deben ser separadas por espacios, y los caracteres no deben incluir espacios ni 
+        saltos de línea.</p>
+    </div>
+    <hr>
+
+    <div id="campo-texto">
+        <textarea name="texto" id="texto" placeholder="Escribe algo..."></textarea>
+    </div>
+
+    <div id="real-time">
+        <p id="num-caracteres">Numero Caracteres: 0</p>
+        <p id="num-palabras">Numero Palabras: 0</p>
+    </div>
 
     <script src="ejercicio-8.js"></script>
 </body>
