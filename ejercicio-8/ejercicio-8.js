@@ -2,14 +2,12 @@
 let tagTextarea = document.getElementById("texto")
 let numCaracteres = document.getElementById("num-caracteres")
 let numPalabras = document.getElementById("num-palabras")
-let contadorPalabras = 0
 let listaCaracteres = []
-let listaPalabras = []
 
 /*La funcion sirve para verificar si el caracter ingresado es una
 letra, un numero o un caracter especial. De ser asi, lo añade a 
 una lista y retorna el numero total. Si es un espacio no lo añade*/
-let verificar = (letra)=> {
+let verificarLetra = (letra)=> {
     for (let i = 33; i < 254; i++){
         if (letra == String.fromCharCode(i)){
             listaCaracteres.push(letra)
@@ -27,5 +25,12 @@ let verificar = (letra)=> {
 
 tagTextarea.addEventListener("keydown", (event)=> {
     let letra = event.key
-    numCaracteres.textContent = `Numero Caracteres: ${verificar(letra)}`
+    numCaracteres.textContent = `Numero Caracteres: ${verificarLetra(letra)}`
+    let texto = tagTextarea.value.split(" ")
+    if (texto.at(-1) == ''){
+        texto.pop()
+    }
+    let contadorPalabras = texto.length
+    numPalabras.textContent = `Numero Palabras: ${contadorPalabras}`
+
 }) 
