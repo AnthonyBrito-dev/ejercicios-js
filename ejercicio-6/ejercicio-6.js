@@ -5,8 +5,8 @@ let reiniciar = document.getElementById("reinicio")
 let tiempo = document.getElementById("time")
 
 //hacer contador
-contadorSeg = 50
-contadorMin = 59
+contadorSeg = 0
+contadorMin = 0
 contadorHrs = 0
 
 //añadir funcion de inicio para que los segundos muestren
