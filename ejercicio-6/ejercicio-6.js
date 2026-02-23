@@ -13,7 +13,7 @@ contadorHrs = 0
 iniciar.addEventListener("click", ()=>{
     let time = setInterval(() => {
         contadorSeg += 1
-        tiempo.textContent = `0${contadorHrs}:0${contadorMin}:0${contadorSeg}`
+        tiempo.textContent = `${contadorHrs}:${contadorMin}:${contadorSeg}`
         if (contadorSeg >= 10 && contadorSeg <= 59) {
             tiempo.textContent = `${contadorHrs}:${contadorMin}:${contadorSeg}` 
         } else if (contadorSeg >= 60){
@@ -33,7 +33,7 @@ iniciar.addEventListener("click", ()=>{
             contadorSeg = 0
             contadorMin = 0
             contadorHrs = 0
-            tiempo.textContent = `0${contadorHrs}:0${contadorMin}:0${contadorSeg}`
+            tiempo.textContent = `${contadorHrs}:${contadorMin}:${contadorSeg}`
             clearInterval(time)
         })
     }, 1000);
