@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 9</title>
+    <style>
+        div{
+            margin-bottom: 40px;
+        }
+    </style>
 </head>
 <body>
     <a href="../index.html">Home</a>
@@ -14,25 +19,19 @@
     <p>Debe incluir un botón para limpiar todas las tareas completadas y actualizar el localStorage</p>
     <hr>
 
-    <div>
+    <div id="container-first">
         <div id="container-tarea1">
-            <p>Tarea Numero 1</p>
-            <input id="tarea" type="text">
-            <input type="checkbox" name="" id="listo1">
+            <p>Lavar los platos <input type="checkbox" name="" id="listo1"></p>
         </div>
         <div id="container-tarea2">
-            <p>Tarea Numero 2</p>
-            <input id="tarea" type="text">
-            <input type="checkbox" name="" id="listo2">
+            <p>Cocinar <input type="checkbox" name="" id="listo2"></p>
         </div>
         <div id="container-tarea3">
-            <p>Tarea Numero 3</p>
-            <input id="tarea3" type="text">
-            <input type="checkbox" name="" id="listo3">
+            <p>Ir al futbol <input type="checkbox" name="" id="listo3"></p>
         </div>
-        <div>
-            <p><button id="borrar">Borrar todo</button></p>
-        </div>
+    </div>
+    <div>
+        <p><button id="borrar">Borrar Completadas</button></p>
     </div>
 
     <script src="ejercicio-9.js"></script>
